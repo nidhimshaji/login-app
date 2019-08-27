@@ -24,22 +24,3 @@ export const login = (name, password) => async (dispatch) => {
     console.log(error);
   }
 };
-
-// export const Login = (username, password) => {
-//     return dispatch => {
-//         axios.post('http://localhost:5000/signin', {
-//             username: username,
-//             password: password
-//         })
-//         .then((response)=>{
-//             dispatch({
-//                 type: AUTH_LOGIN,
-//                 username: response.username
-//             })
-//         })
-//         .catch((error)=>{
-//             console.log("There is no user with the given username and password");
-//             //alert("Username does not exist");
-//         })
-//     };
-// };
